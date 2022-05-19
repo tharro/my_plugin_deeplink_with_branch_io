@@ -84,7 +84,7 @@ pubspec.yaml
 my_pluign_deeplink_with_branch_io:
   git:
     url: https://github.com/tharro/my_pluign_deeplink_with_branch_io
-    ref: 919e28fd089ed47f3b76685bfbb5f08e777d1c90
+    ref: 0525f55268856d12520eee5611ddeeffaf6ccc5e
 ```
 
 In app.dart file:
