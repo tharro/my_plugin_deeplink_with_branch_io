@@ -77,3 +77,25 @@ Open Runner.xcworkspace, select Runner -> Build Settings, click "+" and choose A
 BRANCH_KEY <string>
 BRANCH_LINK_DOMAIN <string>
 ```
+### Flutter
+
+pubspec.yaml
+```
+my_pluign_deeplink_with_branch_io:
+  git:
+    url: https://github.com/tharro/my_pluign_deeplink_with_branch_io
+    ref: 919e28fd089ed47f3b76685bfbb5f08e777d1c90
+```
+
+In app.dart file:
+```
+import 'package:my_pluign_deeplink_with_branch_io/my_plugin_deeplink_with_branch_io.dart';
+
+MyPluginDeepLinkWithBranchIO.init(onDeepLink: (Map<String, dynamic> data) {
+
+});
+
+dispose() {
+  MyPluginDeepLinkWithBranchIO.dispose();
+}
+```
