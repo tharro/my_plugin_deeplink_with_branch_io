@@ -61,10 +61,19 @@ Add comment below to yourproject/android/app/src/main/AndroidManifest.xml
   <meta-data android:name="io.branch.sdk.TestMode" android:value="@string/test_mode" />
 </application>
 ```
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### iOS
+Add comment below to yourproject/ios/Runner/Info.plist
+
+```
+<key>branch_app_domain</key>
+<string>$(BRANCH_LINK_DOMAIN)</string>
+<key>branch_key</key>
+<string>$(BRANCH_KEY)</string>
+```
+
+Open Runner.xcworkspace, select Runner -> Build Settings, click "+" and choose Add User-Defined Setting
+```
+BRANCH_KEY <string>
+BRANCH_LINK_DOMAIN <string>
+```
